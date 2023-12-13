@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('estagio', 'dc472rwr0pxa3ailg52n', 'pscale_pw_3kPs2ym4M0jNZxTkQF0m9JkQ7E7NbhkcPJqexCoM1db', {
+const sequelize = new Sequelize('estagio', 'rn1kjw9uekfmkbg3uast', 'pscale_pw_F2Em8DMCjzRxGYHpQgO9m2rgDZp59H6OTlGmVNsoH56', {
     host: 'aws.connect.psdb.cloud',
     dialect: 'mysql',
     dialectOptions: {
