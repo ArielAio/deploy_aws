@@ -1,8 +1,16 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('estagio', 'root', '123456', {
-    host: 'localhost',
-    dialect: 'mysql'
+const sequelize = new Sequelize('estagio', 'jtqq645pi5g2yt6h2g6d', 'pscale_pw_YjiOA2DS2F2TNZASLunFfX44IfISuEuwXmJyfBpFRno', {
+    host: 'aws.connect.psdb.cloud',
+    dialect: 'mysql',
+    dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false, // Use esta opção com cuidado, dependendo da configuração do seu servidor
+        },
+      },
 })
+
+
 
 async function testarConexao() {
     try {

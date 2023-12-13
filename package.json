@@ -3,18 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "dev": "src/app.js",
     "start": "node src/app.js"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.7.0",
     "express": "^4.18.2",
+    "fastify": "^4.24.3",
     "mysql2": "^3.6.5",
     "sequelize": "^6.35.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "prisma": "^5.7.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
   }
 }
