@@ -26,4 +26,4 @@ async function testarConexao() {
 
 testarConexao();
 
-module.exports = sequelize;
+module.exports = sequelize
