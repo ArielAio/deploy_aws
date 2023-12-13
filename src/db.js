@@ -2,8 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('estagio', process.env.USER_DB, 
-process.env.PASSWORD_DB, {
+const sequelize = new Sequelize('estagio', process.env.USER_DB, process.env.PASSWORD_DB, {
     host: 'aws.connect.psdb.cloud',
     dialect: 'mysql',
     dialectOptions: {
@@ -11,10 +10,10 @@ process.env.PASSWORD_DB, {
           require: true,
           rejectUnauthorized: false, // Use esta opção com cuidado, dependendo da configuração do seu servidor
         },
-      },
-})
-
-
+    },
+    // Adicione a opção 'token' conforme necessário
+    token: 'pscale_tkn_zRjKCZcfYYm97h5q8rwSp9sLnYV2s91KV5R0HgP3LiE',
+});
 
 async function testarConexao() {
     try {
@@ -27,4 +26,4 @@ async function testarConexao() {
 
 testarConexao();
 
-module.exports = sequelize
+module.exports = sequelize;
